@@ -101,7 +101,11 @@ def mars_facts():
     df.set_index('description', inplace=True)
 
     # Convert dataframe into HTML format, add bootstrap
-    return df.to_html(classes="table table-striped")
+    #return df.to_html(classes="table table-striped table-bordered thead-dark", border=2)
+    #return df.to_html(classes="table table-primary")
+    return df.to_html(classes="table table-striped text-center", border=2)
+
+
 
 def hemi_dict(browser):
     # Visit URL
