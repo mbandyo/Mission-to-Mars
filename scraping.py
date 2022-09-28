@@ -97,20 +97,11 @@ def mars_facts():
         return None
 
      # Assign columns and set index of dataframe    
-<<<<<<< HEAD
     df.columns=['Description', 'Mars', 'Earth']
     df.set_index('Description', inplace=True)
 
     # Convert dataframe into HTML format, add bootstrap
     #return df.to_html(classes="table table-striped table-bordered thead-dark", border=2)
-=======
-    df.columns=['description', 'Mars', 'Earth']
-    df.set_index('description', inplace=True)
-
-    # Convert dataframe into HTML format, add bootstrap
-    #return df.to_html(classes="table table-striped table-bordered thead-dark", border=2)
-    #return df.to_html(classes="table table-primary")
->>>>>>> 3e063fc08446438fe7af462265cfae1235527248
     return df.to_html(classes="table table-striped text-center", border=2)
 
 
